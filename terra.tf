@@ -3,7 +3,7 @@ provider "aws" {
 }
 resource "aws_instance" "somuEC2instance" {
     ami = "ami-0e07dcaca348a0e68"
-    instance_type = "t2.micro"
+    instance_type = "t2.small"
     security_groups = ["launch-wizard-22"]
     key_name = "venkypem"
     tags = {
